@@ -1,0 +1,354 @@
+
+package pro.misoft.jackhenryintegration.generated.customer;
+
+import java.util.ArrayList;
+import java.util.List;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAnyElement;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
+import org.w3c.dom.Element;
+
+
+/**
+ * <p>Java class for CustIdRelSrchRec_CType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="CustIdRelSrchRec_CType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="CustIdRelText" type="{http://jackhenry.com/jxchange/TPG/2008}CustIdRelText_Type" minOccurs="0"/&gt;
+ *         &lt;element name="CustId" type="{http://jackhenry.com/jxchange/TPG/2008}CustId_Type" minOccurs="0"/&gt;
+ *         &lt;element name="RelCustId" type="{http://jackhenry.com/jxchange/TPG/2008}CustId_Type" minOccurs="0"/&gt;
+ *         &lt;element name="CustIdRelType" type="{http://jackhenry.com/jxchange/TPG/2008}CustIdRelType_Type" minOccurs="0"/&gt;
+ *         &lt;element name="RelPry" type="{http://jackhenry.com/jxchange/TPG/2008}RelPry_Type" minOccurs="0"/&gt;
+ *         &lt;element name="CustIdRelCode" type="{http://jackhenry.com/jxchange/TPG/2008}CustRelCode_Type" minOccurs="0"/&gt;
+ *         &lt;element name="CustIdRelDesc" type="{http://jackhenry.com/jxchange/TPG/2008}CustRelDesc_Type" minOccurs="0"/&gt;
+ *         &lt;element name="PersonName" type="{http://jackhenry.com/jxchange/TPG/2008}PersonName_CType" minOccurs="0"/&gt;
+ *         &lt;element name="Custom" type="{http://jackhenry.com/jxchange/TPG/2008}Custom_CType" minOccurs="0"/&gt;
+ *         &lt;sequence minOccurs="0"&gt;
+ *           &lt;element name="Ver_1" type="{http://jackhenry.com/jxchange/TPG/2008}Ver_1_CType"/&gt;
+ *           &lt;any processContents='lax' namespace='http://jackhenry.com/jxchange/TPG/2008' maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;/sequence&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "CustIdRelSrchRec_CType", propOrder = {
+    "custIdRelText",
+    "custId",
+    "relCustId",
+    "custIdRelType",
+    "relPry",
+    "custIdRelCode",
+    "custIdRelDesc",
+    "personName",
+    "custom",
+    "ver1",
+    "any"
+})
+public class CustIdRelSrchRecCType {
+
+    @XmlElement(name = "CustIdRelText")
+    protected CustIdRelTextType custIdRelText;
+    @XmlElement(name = "CustId")
+    protected CustIdType custId;
+    @XmlElement(name = "RelCustId")
+    protected CustIdType relCustId;
+    @XmlElement(name = "CustIdRelType")
+    protected CustIdRelTypeType custIdRelType;
+    @XmlElement(name = "RelPry")
+    protected RelPryType relPry;
+    @XmlElement(name = "CustIdRelCode")
+    protected CustRelCodeType custIdRelCode;
+    @XmlElement(name = "CustIdRelDesc")
+    protected CustRelDescType custIdRelDesc;
+    @XmlElement(name = "PersonName")
+    protected PersonNameCType personName;
+    @XmlElement(name = "Custom")
+    protected CustomCType custom;
+    @XmlElement(name = "Ver_1")
+    protected Ver1CType ver1;
+    @XmlAnyElement(lax = true)
+    protected List<Object> any;
+
+    /**
+     * Gets the value of the custIdRelText property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CustIdRelTextType }
+     *     
+     */
+    public CustIdRelTextType getCustIdRelText() {
+        return custIdRelText;
+    }
+
+    /**
+     * Sets the value of the custIdRelText property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CustIdRelTextType }
+     *     
+     */
+    public void setCustIdRelText(CustIdRelTextType value) {
+        this.custIdRelText = value;
+    }
+
+    /**
+     * Gets the value of the custId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CustIdType }
+     *     
+     */
+    public CustIdType getCustId() {
+        return custId;
+    }
+
+    /**
+     * Sets the value of the custId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CustIdType }
+     *     
+     */
+    public void setCustId(CustIdType value) {
+        this.custId = value;
+    }
+
+    /**
+     * Gets the value of the relCustId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CustIdType }
+     *     
+     */
+    public CustIdType getRelCustId() {
+        return relCustId;
+    }
+
+    /**
+     * Sets the value of the relCustId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CustIdType }
+     *     
+     */
+    public void setRelCustId(CustIdType value) {
+        this.relCustId = value;
+    }
+
+    /**
+     * Gets the value of the custIdRelType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CustIdRelTypeType }
+     *     
+     */
+    public CustIdRelTypeType getCustIdRelType() {
+        return custIdRelType;
+    }
+
+    /**
+     * Sets the value of the custIdRelType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CustIdRelTypeType }
+     *     
+     */
+    public void setCustIdRelType(CustIdRelTypeType value) {
+        this.custIdRelType = value;
+    }
+
+    /**
+     * Gets the value of the relPry property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link RelPryType }
+     *     
+     */
+    public RelPryType getRelPry() {
+        return relPry;
+    }
+
+    /**
+     * Sets the value of the relPry property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link RelPryType }
+     *     
+     */
+    public void setRelPry(RelPryType value) {
+        this.relPry = value;
+    }
+
+    /**
+     * Gets the value of the custIdRelCode property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CustRelCodeType }
+     *     
+     */
+    public CustRelCodeType getCustIdRelCode() {
+        return custIdRelCode;
+    }
+
+    /**
+     * Sets the value of the custIdRelCode property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CustRelCodeType }
+     *     
+     */
+    public void setCustIdRelCode(CustRelCodeType value) {
+        this.custIdRelCode = value;
+    }
+
+    /**
+     * Gets the value of the custIdRelDesc property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CustRelDescType }
+     *     
+     */
+    public CustRelDescType getCustIdRelDesc() {
+        return custIdRelDesc;
+    }
+
+    /**
+     * Sets the value of the custIdRelDesc property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CustRelDescType }
+     *     
+     */
+    public void setCustIdRelDesc(CustRelDescType value) {
+        this.custIdRelDesc = value;
+    }
+
+    /**
+     * Gets the value of the personName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link PersonNameCType }
+     *     
+     */
+    public PersonNameCType getPersonName() {
+        return personName;
+    }
+
+    /**
+     * Sets the value of the personName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link PersonNameCType }
+     *     
+     */
+    public void setPersonName(PersonNameCType value) {
+        this.personName = value;
+    }
+
+    /**
+     * Gets the value of the custom property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link CustomCType }
+     *     
+     */
+    public CustomCType getCustom() {
+        return custom;
+    }
+
+    /**
+     * Sets the value of the custom property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CustomCType }
+     *     
+     */
+    public void setCustom(CustomCType value) {
+        this.custom = value;
+    }
+
+    /**
+     * Gets the value of the ver1 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Ver1CType }
+     *     
+     */
+    public Ver1CType getVer1() {
+        return ver1;
+    }
+
+    /**
+     * Sets the value of the ver1 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Ver1CType }
+     *     
+     */
+    public void setVer1(Ver1CType value) {
+        this.ver1 = value;
+    }
+
+    /**
+     * Gets the value of the any property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the any property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getAny().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Object }
+     * {@link Element }
+     * 
+     * 
+     */
+    public List<Object> getAny() {
+        if (any == null) {
+            any = new ArrayList<Object>();
+        }
+        return this.any;
+    }
+
+}

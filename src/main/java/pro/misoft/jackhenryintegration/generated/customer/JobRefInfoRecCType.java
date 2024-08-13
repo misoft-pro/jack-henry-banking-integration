@@ -1,0 +1,242 @@
+
+package pro.misoft.jackhenryintegration.generated.customer;
+
+import java.util.ArrayList;
+import java.util.List;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAnyElement;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
+import org.w3c.dom.Element;
+
+
+/**
+ * <p>Java class for JobRefInfoRec_CType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="JobRefInfoRec_CType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="JobRefType" type="{http://jackhenry.com/jxchange/TPG/2008}JobRefType_Type" minOccurs="0"/&gt;
+ *         &lt;element name="JobRefName" type="{http://jackhenry.com/jxchange/TPG/2008}JobRefName_Type" minOccurs="0"/&gt;
+ *         &lt;element name="JobRefRelType" type="{http://jackhenry.com/jxchange/TPG/2008}JobRefRelType_Type" minOccurs="0"/&gt;
+ *         &lt;element name="JobRefPhoneArray" type="{http://jackhenry.com/jxchange/TPG/2008}PhoneArray_AType" minOccurs="0"/&gt;
+ *         &lt;element name="JobRefEmailAddr" type="{http://jackhenry.com/jxchange/TPG/2008}EmailAddr_Type" minOccurs="0"/&gt;
+ *         &lt;sequence minOccurs="0"&gt;
+ *           &lt;element name="Ver_1" type="{http://jackhenry.com/jxchange/TPG/2008}Ver_1_CType"/&gt;
+ *           &lt;any processContents='lax' namespace='http://jackhenry.com/jxchange/TPG/2008' maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;/sequence&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "JobRefInfoRec_CType", propOrder = {
+    "jobRefType",
+    "jobRefName",
+    "jobRefRelType",
+    "jobRefPhoneArray",
+    "jobRefEmailAddr",
+    "ver1",
+    "any"
+})
+public class JobRefInfoRecCType {
+
+    @XmlElement(name = "JobRefType")
+    protected JobRefTypeType jobRefType;
+    @XmlElement(name = "JobRefName")
+    protected JobRefNameType jobRefName;
+    @XmlElement(name = "JobRefRelType")
+    protected JobRefRelTypeType jobRefRelType;
+    @XmlElement(name = "JobRefPhoneArray")
+    protected PhoneArrayAType jobRefPhoneArray;
+    @XmlElement(name = "JobRefEmailAddr")
+    protected EmailAddrType jobRefEmailAddr;
+    @XmlElement(name = "Ver_1")
+    protected Ver1CType ver1;
+    @XmlAnyElement(lax = true)
+    protected List<Object> any;
+
+    /**
+     * Gets the value of the jobRefType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JobRefTypeType }
+     *     
+     */
+    public JobRefTypeType getJobRefType() {
+        return jobRefType;
+    }
+
+    /**
+     * Sets the value of the jobRefType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JobRefTypeType }
+     *     
+     */
+    public void setJobRefType(JobRefTypeType value) {
+        this.jobRefType = value;
+    }
+
+    /**
+     * Gets the value of the jobRefName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JobRefNameType }
+     *     
+     */
+    public JobRefNameType getJobRefName() {
+        return jobRefName;
+    }
+
+    /**
+     * Sets the value of the jobRefName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JobRefNameType }
+     *     
+     */
+    public void setJobRefName(JobRefNameType value) {
+        this.jobRefName = value;
+    }
+
+    /**
+     * Gets the value of the jobRefRelType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JobRefRelTypeType }
+     *     
+     */
+    public JobRefRelTypeType getJobRefRelType() {
+        return jobRefRelType;
+    }
+
+    /**
+     * Sets the value of the jobRefRelType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JobRefRelTypeType }
+     *     
+     */
+    public void setJobRefRelType(JobRefRelTypeType value) {
+        this.jobRefRelType = value;
+    }
+
+    /**
+     * Gets the value of the jobRefPhoneArray property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link PhoneArrayAType }
+     *     
+     */
+    public PhoneArrayAType getJobRefPhoneArray() {
+        return jobRefPhoneArray;
+    }
+
+    /**
+     * Sets the value of the jobRefPhoneArray property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link PhoneArrayAType }
+     *     
+     */
+    public void setJobRefPhoneArray(PhoneArrayAType value) {
+        this.jobRefPhoneArray = value;
+    }
+
+    /**
+     * Gets the value of the jobRefEmailAddr property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link EmailAddrType }
+     *     
+     */
+    public EmailAddrType getJobRefEmailAddr() {
+        return jobRefEmailAddr;
+    }
+
+    /**
+     * Sets the value of the jobRefEmailAddr property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link EmailAddrType }
+     *     
+     */
+    public void setJobRefEmailAddr(EmailAddrType value) {
+        this.jobRefEmailAddr = value;
+    }
+
+    /**
+     * Gets the value of the ver1 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Ver1CType }
+     *     
+     */
+    public Ver1CType getVer1() {
+        return ver1;
+    }
+
+    /**
+     * Sets the value of the ver1 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Ver1CType }
+     *     
+     */
+    public void setVer1(Ver1CType value) {
+        this.ver1 = value;
+    }
+
+    /**
+     * Gets the value of the any property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the any property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getAny().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link Object }
+     * {@link Element }
+     * 
+     * 
+     */
+    public List<Object> getAny() {
+        if (any == null) {
+            any = new ArrayList<Object>();
+        }
+        return this.any;
+    }
+
+}
